@@ -1,6 +1,6 @@
 const populateData = require("../models/story");
 
-const controller = async (req, res) => {
+const StoryPopulate = async (req, res) => {
     try {
         if(req.body !== {}) {
             console.log(req.body, "req");
@@ -13,4 +13,11 @@ const controller = async (req, res) => {
     }
 } 
 
-module.exports= controller
+const CommentPopulate = async (req, res) => {
+    console.log(req.body);
+}
+
+module.exports= {
+    StoryPopulate,
+
+}

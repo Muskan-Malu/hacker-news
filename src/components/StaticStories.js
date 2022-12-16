@@ -37,7 +37,7 @@ export const StaticStories = () => {
                 <Link to="/static">Static</Link>
                 </li>
                 <li>
-                    <Link to="/login">Login</Link>
+                    {!loggedin && <Link to="/login">Login</Link>}
                 </li>
             </StoryHeader>
                 {data.map((data, index) => (

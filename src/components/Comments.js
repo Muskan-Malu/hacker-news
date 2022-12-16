@@ -8,6 +8,9 @@ export const Comments = ({commentId}) => {
     const [viewSubComments, setViewSubComments] = useState(false);
     const [comment, setComment] = useState([]);
 
+    var date = new Date(comment.time * 1000);
+    var formattedTime = date.toString().slice(0, 25);
+
     useEffect(() => {
         getComment(commentId).then(data => setComment(data))
     }, []);
@@ -24,7 +27,7 @@ export const Comments = ({commentId}) => {
                 <CommentCard>
                     <CommentCardHeader>
                         <div>By: {comment.by}</div>
-                        <div>Posted: {comment.time}</div>
+                        <div>Posted: {formattedTime}</div>
                     </CommentCardHeader>
                     <p>
                         Comment: {comment.text}

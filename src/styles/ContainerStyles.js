@@ -32,7 +32,7 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 export const StoryHeader = styled.ul`
-    background-color: #3BC4D7; 
+    background-color: #FAAB78; 
     list-style-type: none;
     text-align: center;
     margin: 0;
@@ -40,8 +40,12 @@ export const StoryHeader = styled.ul`
 
     li {
         display: inline-block;
-        font-size: 20px;
+        font-size: 25px;
         padding: 20px;
+        font-family: 'Times New Roman', serif;
+        color: #2e2e2c;
+        text-decoration: none;
+        text-decoration-color: aliceblue;
     }
 `;
 
@@ -51,6 +55,7 @@ export const StoriesContainerWrapper = styled.main`
     margin: auto;
     alignment: center;
     border: 2px #cccc
+    box-shadow: 0 0 15px 5px grey;
 `;
 
 export const PageTitle = styled.h1`
@@ -68,5 +73,5 @@ export const PageTitle = styled.h1`
 `;
 
 export const NewsContainer = styled.div`
-    background-color: #EEEBDB;
+    background-color: #FEFCF3;
 `;
